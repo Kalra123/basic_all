@@ -1,0 +1,45 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;}
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.전체{
+    background-color: aqua;
+    
+}
+.전체 .첫째{
+    
+    background-color: aquamarine;
+    width: 900px;
+    margin-top: 20px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 200px;
+
+    
+}
+.전체 .첫째 .첫자손{
+    width: 25%;
+    height: 300px;
+    float: left;
+    margin-right: 2%;
+}
+.전체 .첫째 .첫자손.첫자식1{
+    background-color: azure;
+}
+.전체 .첫째 .첫자손.첫자식2{
+    background-color: beige;
+}
+.전체 .첫째 .첫자손.첫자식3{
+    background-color: bisque;
+}
+.전체 .첫째 .첫자손.첫자식4{
+    background-color: blanchedalmond;
+    margin-right: 0;
+    
+}

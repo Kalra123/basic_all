@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.약 {
+    clear: both;
+}
+
+/* 부모의 통제를 지켜주는 both*/
+/*자식은 부모의 넓이에 따라가고, 부모는 자식의 높이에 따라간다*/
+
+.전체 {
+    background-color: blue;
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+    /*영역을 가운데정렬*/
+
+}
+
+.전체 .첫째자식 {
+    background-color: blueviolet;
+    height: 500px;
+    background-image: url(https://cgeimage.commutil.kr/phpwas/restmb_allidxmake.php?idx=3&simg=2021072118361102763da2c546b3a21924821994.jpg);
+    transition: 1.2s;
+    background-repeat: no-repeat;
+    /*배경이미지를 반복하지 말 것*/
+    background-size: cover;
+    /*배경이미지가 잘리더라도 1차적으로 넓이를 다 채움*/
+
+}
+
+.전체 .첫째자식:hover {
+    background-image: url(https://cgeimage.commutil.kr/phpwas/restmb_allidxmake.php?idx=3&simg=2021072118371709112da2c546b3a21924821994.jpg);
+}
+
+.전체 .둘째자식 {
+    background-color: crimson;
+    margin-top: 20px;
+}
+
+.전체 .둘째자식 .첫째손자 {
+    float: left;
+    background-color: brown;
+    height: 200px;
+    width: 31.3333%;
+    margin: 0 1%;
+    /*
+      margin:1%; 상하좌우
+      margin:1% 2%; 상하 좌우
+      margin:1% 2% 3%; 상 좌우 하
+      margin:1% 2% 3% 4%; 상 우 하 좌 
+      */
+
+    /*
+      마진을 적용 시 오른쪽에 2%적용할때 
+      margin:0 2% 0 0; or margin-right:2%;
+      */
+
+}
+
+.전체 .둘째자식 .둘째손자 {
+    float: left;
+    background-color: cadetblue;
+    height: 200px;
+    width: 31.3333%;
+    margin: 0 1%;
+}
+
+.전체 .둘째자식 .셋째손자 {
+    float: left;
+    background-color: chartreuse;
+    height: 200px;
+    width: 31.3333%;
+    margin: 0 1%;
+}
+
+.전체 .셋째자식 {
+    background-color: #fb2576;
+    margin-top: 20px;
+}
+
+.전체 .셋째자식::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.전체 .셋째자식 .one {
+    background-color: #3f0071;
+    width: 24.25%;
+    height: 200px;
+    float: left;
+    margin-right: 1%;
+}
+
+.전체 .셋째자식 .two {
+    background-color: #38e54d;
+    width: 24.25%;
+    height: 200px;
+    float: left;
+    margin-right: 1%;
+}
+
+.전체 .셋째자식 .two span {
+    color: red;
+}
+
+/* 인라인(In-line) 요소 - 글자색을 추가함 */
+
+.전체 .셋째자식 .three {
+    background-color: #ff1e1e;
+    width: 24.25%;
+    height: 200px;
+    float: left;
+    margin-right: 1%;
+}
+
+.전체 .셋째자식 .four {
+    background-color: #a66cff;
+    width: 24.25%;
+    height: 200px;
+    float: left;
+}

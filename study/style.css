@@ -1,0 +1,74 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;}
+
+/* reset */
+li {
+    list-style: none;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 2000px;
+    margin: auto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8) url(images/cover.png)
+    no-repeat;
+    background-size: cover;
+    background-blend-mode: hue;
+}
+
+/* header */
+
+header {
+    
+    height: 100px;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+header .container .logo {
+    width: 150px;
+}
+header .container .logo a img {
+    width: 100%;
+}
+
+
+   
+header .container .menu ul {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.main {
+    margin-top: 5%;
+}
+.main .slider .slick-slide{
+    display: flex;
+    overflow: hidden;
+}
+.main .slider .slick-slide .left_area{
+    position: relative;
+    width: 50%;
+}
+.main .slider .left_area .nikey_main{
+    width: 120%;
+    padding-top: 160px;
+}
+
+

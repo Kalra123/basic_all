@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Poor+Story&display=swap');
+
+/* font-family: 'Gugi', cursive;
+font-family: 'Poor Story', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.치매약:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.전체 {
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    background-color: red;
+}
+
+/* .첫째 */
+.전체 .첫째 {
+    padding: 20px;
+    background-color: orange;
+}
+
+.전체 .첫째 .첫자손 {
+    width: 25%;
+    float: left;
+}
+
+.전체 .첫째 .첫자손.첫자식1 {
+    font-family: 'Gugi', cursive;
+    background-color: yellow;
+    position: relative;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .하 {
+    position: relative;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/Poster/000077/77571/77571_1000.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .하 h4 {
+    position: absolute;
+    background-color: blanchedalmond;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    padding: 3px, 5px;
+    transform: translate(-50%, -50%);
+
+}
+
+.전체 .첫째 .첫자손.첫자식1 .상 {
+    position: absolute;
+    /* left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* 위 아래 좌 우 부모를 꽉 채울려고 사용할때 사용가능*/
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86334/86334_1000.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    transform: translateX(100%);
+
+}
+
+.전체 .첫째 .첫자손.첫자식1:hover .상 {
+    transform: translateX(0%);
+}
+
+.전체 .첫째 .첫자손.첫자식1 .상 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkslateblue;
+    color: darkslategray;
+}
+
+/* 첫자식1 END */
+.전체 .첫째 .첫자손.첫자식2 {
+    position: relative;
+    background-color: green;
+    font-family: 'Poor Story', cursive;
+    height: 200px;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식2 .상하 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.전체 .첫째 .첫자손.첫자식2 .상하 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #222;
+    padding: 3px 5px;
+}
+
+.전체 .첫째 .첫자손.첫자식2 .상 {
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86155/86155_1000.jpg);
+    z-index: 2;
+    transform: translateY(-100%);
+    transition: 0.3s;
+}
+/* z-index는 포지션이 있어야 적용된다 */
+/* z-index는 레이어를 위로 올리는 것과 동일하다 */
+.전체 .첫째 .첫자손.첫자식2 .하 {
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86205/86205_1000.jpg);
+    z-index: 1;
+
+}
+.전체 .첫째 .첫자손.첫자식2:hover .상 {
+    transform: translateY(0%);
+} 
+.전체 .첫째 .첫자손.첫자식2 .하
+
+
+/* 첫자식2 END */
+.전체 .첫째 .첫자손.첫자식3 {
+    background-color: blue;
+}
+
+.전체 .첫째 .첫자손.첫자식4 {
+    background-color: blueviolet;
+}

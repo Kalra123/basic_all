@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body {
+    background-color: grey;
+}
+
+.전체 {
+    width: 1000px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.전체 .첫째 {
+    position: relative;
+    color: #000;
+}
+
+.전체 .첫째 .icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 100;
+
+
+}
+
+.전체 .첫째 .제목 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+
+.slickWrap {
+    height: 445px;
+    overflow: hidden;
+}
+
+.slickWrap .slick-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.slickWrap .slick-prev:after {
+    content: "\f060";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 60px;
+    color: #1D1CE5;
+    text-shadow: #000;
+}
+
+.slickWrap .slick-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    font-size: 0;
+}
+
+.slickWrap .slick-next:after {
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 60px;
+    color: #1D1CE5;
+    text-shadow: #000;
+}
+
+.전체 .둘째 {
+    background-color: blue;
+    padding: 10px;
+}
+
+.전체 .둘째 .둘자손 {
+    width: 23.5%;
+    height: 300px;
+    float: left;
+    margin-right: 2%;
+}
+
+.전체 .둘째 .둘자식1 {
+    background-color: blueviolet;
+}
+
+.전체 .둘째 .둘자식2 {
+    background-color: brown;
+}
+
+.전체 .둘째 .둘자식3 {
+    background-color: burlywood;
+}
+
+.전체 .둘째 .둘자식4 {
+    background-color: bisque;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.전체 .둘째 .둘자식4 .slick-track {
+    height: 300px;
+}
+
+.전체 .둘째 .둘자식4 .slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.전체 .둘째 .둘자식4 .slick-dots li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.전체 .셋째 {
+    background-color: chartreuse;
+    padding: 20px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.전체 .셋째 .셋째영역{
+    background-color: darkolivegreen;
+    padding: 20px;
+    width: 900px;
+    box-sizing: border-box;
+    margin: auto;
+    /* border : 두께 스타일 칼라; */
+    border:2px solid #61764B; 
+
+}
+
+.전체 .셋째 .셋자손 {
+    height: 200px;
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.전체 .셋째 .셋자식1 {
+    background-color: chocolate;
+}
+
+.전체 .셋째 .셋자식2 {
+    background-color: darkcyan;
+}
+
+.전체 .셋째 .셋자식3 {
+    background-color: darkmagenta;
+    margin-right: 0;
+}
+
+.전체 .넷째 {
+    background-color: darkblue;
+    width: 900px;
+    margin-top: 30px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.전체 .넷째 .넷자손{
+    background-color:darkgoldenrod;
+    width: 23.5%;
+    float: left;
+    height: 200px;
+    margin: auto;
+    margin-right: 2%;
+}
+.전체 .넷째 .넷자식1{}
+.전체 .넷째 .넷자식2{}
+.전체 .넷째 .넷자식3{}
+.전체 .넷째 .넷자식4{
+    margin: 0;
+}
+
+.전체 .닷째{
+    background-color: green;
+    width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 200px;
+}
+.전체 .닷째 .닷자손{
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+    height: 200px;
+    
+}
+.전체 .닷째 .닷자손.닷자식1{
+    background-color: greenyellow;
+}
+.전체 .닷째 .닷자손.닷자식2{
+    background-color:red;
+    margin-right: 0;
+}
+
+.전체 .여섯 .clear{
+    background-color: blue;
+    width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 2px;
+}
+.전체 .여섯 .여손자{
+    background-color: blueviolet;
+    width: 18.4%;
+    height: 200px;
+    float: left;
+
+}
+.전체 .여섯 .여손자.여자식1{
+    background-color: brown;
+}
+.전체 .여섯 .여손자.여자식2{
+    background-color: chartreuse;
+}
+.전체 .여섯 .여손자.여자식3{
+    background-color: crimson;
+}
+.전체 .여섯 .여손자.여자식4{
+    background-color: cornflowerblue;
+}
+.전체 .여섯 .여손자.여자식5{
+    background-color: firebrick;
+    margin-right: 0;
+}
